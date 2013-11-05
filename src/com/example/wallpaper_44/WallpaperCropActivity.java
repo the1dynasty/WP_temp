@@ -16,6 +16,7 @@
 
 package com.example.wallpaper_44;
 
+import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.WallpaperManager;
@@ -54,6 +55,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
+@SuppressLint("DefaultLocale") @SuppressWarnings("unused")
 public class WallpaperCropActivity extends Activity {
     private static final String LOGTAG = "Launcher3.CropActivity";
 

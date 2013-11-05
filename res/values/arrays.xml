@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<resources>
+    
+	<string-array name="wallpapers">
+	    <item>wallpaper_nexus_one</item>
+		<item>wallpaper_nexus_two</item>
+		<item>wallpaper_nexus_three</item>
+		<item>wallpaper_nexus_four</item>
+		<item>wallpaper_nexus_five</item>
+		<item>wallpaper_nexus_six</item>
+	</string-array>
+
+</resources>

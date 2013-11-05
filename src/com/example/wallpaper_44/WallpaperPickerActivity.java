@@ -72,6 +72,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
+@SuppressWarnings("unused")
 public class WallpaperPickerActivity extends WallpaperCropActivity {
     static final String TAG = "Launcher.WallpaperPickerActivity";
 
@@ -466,9 +467,6 @@ public class WallpaperPickerActivity extends WallpaperCropActivity {
         }
     }
 
-    public boolean enableRotation() {
-        return super.enableRotation() || Launcher.sForceEnableRotation;
-    }
 
     protected Bitmap getThumbnailOfLastPhoto() {
         Cursor cursor = MediaStore.Images.Media.query(getContentResolver(),
@@ -694,7 +692,8 @@ public class WallpaperPickerActivity extends WallpaperCropActivity {
         return bundledWallpapers;
     }
 
-    private ResourceWallpaperInfo getDefaultWallpaperInfo() {
+    @SuppressWarnings("deprecation")
+	private ResourceWallpaperInfo getDefaultWallpaperInfo() {
         Resources sysRes = Resources.getSystem();
         int resId = sysRes.getIdentifier("default_wallpaper", "drawable", "android");
 

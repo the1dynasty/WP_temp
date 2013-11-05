@@ -28,11 +28,13 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:background="@android:color/black"
+        android:contentDescription="@string/content_desc"
         android:scaleType="centerCrop" />
     <ImageView
         android:id="@+id/wallpaper_icon"
         android:layout_width="@dimen/wallpaperItemIconSize"
         android:layout_height="@dimen/wallpaperItemIconSize"
+        android:contentDescription="@string/content_desc"
         android:layout_gravity="center"
         android:visibility="gone" />
     <TextView

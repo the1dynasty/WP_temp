@@ -27,6 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/wallpaper_picker_translucent_gray"
+        android:contentDescription="@string/wallpaper_image"
         android:scaleType="centerCrop" />
     <TextView
         android:id="@+id/wallpaper_item_label"
